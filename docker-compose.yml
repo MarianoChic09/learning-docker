@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/usr/src/app
+    environment:
+      - DATABASE_URL=your_database_url_here # if you're using a database
+
