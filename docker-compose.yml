@@ -7,6 +7,6 @@ services:
       - "8000:8000"
     volumes:
       - ./app:/usr/src/app
-    environment:
-      - DATABASE_URL=your_database_url_here # if you're using a database
+    #environment:
+      #- DATABASE_URL=your_database_url_here # if you're using a database
 
